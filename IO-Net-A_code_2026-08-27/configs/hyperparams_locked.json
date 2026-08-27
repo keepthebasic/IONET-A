@@ -1,0 +1,69 @@
+{
+  "pilot_lake": "BVR",
+  "selection_split": "val",
+  "metric": "val_joint_loss",
+  "lstm": {
+    "hidden": 64,
+    "lr": 0.001,
+    "num_layers": 2,
+    "dropout": 0.1
+  },
+  "qlstm": {
+    "hidden": 64,
+    "lr": 0.001,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "chla_pinball_weight": 1.5
+  },
+  "grud": {
+    "hidden": 64,
+    "lr": 0.001,
+    "dropout": 0.1,
+    "batch_size": 32
+  },
+  "tcn": {
+    "hidden": 64,
+    "lr": 0.001
+  },
+  "mtlstm": {
+    "hidden": 64,
+    "lr": 0.001,
+    "num_layers": 2,
+    "dropout": 0.1
+  },
+  "informer": {
+    "d_model": 64,
+    "lr": 0.001,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "n_heads": 4,
+    "factor": 5,
+    "batch_size": 32
+  },
+  "patchtst": {
+    "d_model": 64,
+    "lr": 0.001,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "n_heads": 4,
+    "patch_len": 16,
+    "stride": 8,
+    "batch_size": 32
+  },
+  "pls": {
+    "n_components": 10
+  },
+  "xgboost": {
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "n_estimators": 300
+  },
+  "ionet_a": {
+    "lr": 0.0008,
+    "batch_size": 32,
+    "hidden": 64,
+    "dropout": 0.1,
+    "width_reg_weight": 0.1,
+    "chla_pinball_weight": 1.5
+  }
+}
